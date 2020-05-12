@@ -1,0 +1,30 @@
+    <div id="box">
+        <p class="coordinate">
+            X: <span id="x"></span>
+            Y: <span id="y"></span>
+        </p>
+    </div>
+
+///////////////////
+
+div{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.coordinate{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+///////////
+
+document.getElementById("box").onmousemove = function (event) {
+    event = event || window.event
+    console.log (event)
+    document.getElementById("x").innerText = event.offsetX
+    document.getElementById("y").innerText = event.offsetY
+}

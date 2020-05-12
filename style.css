@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+}
+
+/*Modal window*/
+
+.first-window{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://insuranceblog.accenture.com/wp-content/uploads/2019/09/Technology_Vision1.jpeg") no-repeat center/cover black;
+}
+
+.removeModal {
+    transition: all 1s ease-in-out;
+    transform: translateY(-700px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.first-modal{
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    background: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+}
+
+.modal-title{
+    text-align: center;
+    color: gray;
+}
+
+.mTitle:hover{
+    transition: all 0.5s ease-in-out;
+    color: deepskyblue;
+    transform: translateX(20px);
+}
+
+.modal-content{
+    height: 80px;
+    text-align: center;
+    color: gray;
+}
+
+.mContentP:hover{
+    transition: all 0.5s ease-in-out;
+    color: deepskyblue;
+    transform: translateX(-20px);
+}
+
+#clickMe{
+    background: black;
+    color: gray;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#clickMe:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(-1);
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+
+}
+
+#messageAfterPrompt{
+    font-size: 12px;
+}
+
+#messageAfterPrompt:hover{
+    transition: 0.5s ease-in-out;
+    color: deepskyblue;
+}
+
+.modal-buttons{
+    float: right;
+}
+
+#buttonOk{
+    background: black;
+    color: gray;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#buttonOk:hover{
+    transition: all 0.5s ease-in-out;
+    transform: rotate(720deg);
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+}
+
+.hr{
+    border: 1px solid deepskyblue;
+}
+
+/*Main content*/
